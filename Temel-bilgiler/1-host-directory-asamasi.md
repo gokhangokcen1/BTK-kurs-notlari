@@ -12,7 +12,7 @@
 
 # Nmap #
 
-- `nmap -sP 192.168.1.0/24` ping gönderiliyor. Firewall benzeri geri istek dönmesini engelleyen sistemler varsa cevap dönmeyecektir.
+- `nmap -sP 192.168.1.0/24` ping taraması. Firewall benzeri geri istek dönmesini engelleyen sistemler varsa cevap dönmeyecektir.
 - `nmap 192.168.1.0/24 --top-port-100 --open > btkanaliz` şeklinde en çok kullanılan 100 portun taramasını yapıp _btkanaliz_ dosyasına yükleniyor
 - `cat btkanaliz | grep Nmap` yazdığımızda _Nmap scan report for <IP ADRES>_ şeklinde bir cevap alacağız
 - `cat btkanaliz |grep Nmap | awk '{print $5}' > ip` yazarak da yalnızca ip adresleri kalacak şekilde filtrelendirip ip dosyasına sonucu yazıyoruz.
@@ -45,7 +45,19 @@
 - `nmap 192.168.1.113 --open --top-ports=5000`
   
 # Nmap Tarama Tipleri #
- 
+- `nmap 192.168.1.113 --open --top-ports=100 -sS` SYN paketi ile port tarama
+- `nmap 192.168.1.113 --open --top-ports=100 -sT` TCP ile port tarama
+  - neden TCP taramasına ihtiyaç duyuyoruz, syn taraması neden yetmiyor? Port taraması yaptığımız sunucu tarafında bizim paketlerimizi alan _SYN PROXY_ gibi teknolojiler olabiler. Bunun gibi teknolojiler arkada port açık olmasa dahi bize açıkmış gibi cevap gönderebilir. Birçok portun açık olduğunu gördüğümüzde (81,82,83,84,85) ve böyle bir teknolojinin varlığından şüphelendiğimizde TCP taramasını yaparız, üçlü el sıkışma bize gerçekte de açık olan portları filtrelememizi sağlar.
+- `nmap 192.168.1.0/24 -sU` UDP taraması
+- `nmap 192.168.1.113 -sN` Null, içinde flag olmayan bir tarama. Bir servis var ve bana cevap vermiyor. Biri ile boş boş bakışmak gibi 
+  - open filtered |firewall bypass yöntemlerinde kullanılır
+
+# Nmap Ek Parametreler #
+- `nmap 192.168.1.113 -O` tahmini işletim sistemi ve versiyonu
+- `nmap 192.168.1.113 -sV` normal taramada ftp, smtp gibi yazılar tahmini olarak vardı. ancak bu tarama ile versiyon taraması yaparak port üzerinde tam olarak ne çalıştığını öğreniyoruz.
+- `nmap 192.168.1.113 -A` TCP ACK taraması. işletim sistemi, versiyon taraması, ufak fingerprint scriptleri
+  
+  
   
   
   
