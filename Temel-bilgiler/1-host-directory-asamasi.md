@@ -1,3 +1,5 @@
+
+
 **Aşamalar**
 1.  Host discovery
 2.  Port tarama
@@ -31,5 +33,43 @@
   - > yandex.com.tr
   - > 10.0.0.0/24
 - `nmap 192.168.1.0/24 --exclude 192.168.1.200` 192.168.1.200 haricindeki o subnetteki tüm iplere tarama yapılacak.
+
+# Nmap Port Tanımlaması #
+- `nmap -p 80 <IP ADRESI>` 80 portunu tarıyor.
+- `nmap -p 80 192.168.1.0/24` ağdaki tüm ipler üzerinde 80 portunu tarar (açık olan da kapalı olan da gözükür).
+- `nmap -p 80 192.168.1.0/24 --opem` ağdaki tüm ipler üzerinde 80 portu açık olanları gösterir.
+- `nmap -p 80,445 192.168.1.0/24 --open` ağdaki 80 ve 445. portu açık olan tüm ipleri gösterir.
+- `nmap -p 80-445 192.168.1.0/24 --open` 80 ve 445 aralığındaki portları açık olan ipler
+- `nmap -p 0-65535 192.168.1.0/24 --open` 65535 porttan açık olanları gösterir
+- `nmap -p- 192.168.1.0/24 --open` yine aynı şekilde 65535 portu tarar.
+- `nmap 192.168.1.113 --open --top-ports=5000`
+  
+# Nmap Tarama Tipleri #
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
