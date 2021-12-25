@@ -8,9 +8,28 @@
 7.  Zafiyet	✓ exploit ?
 8.  exploit	✓ uygun şartlar?
 
-**Nmap**
+# Nmap #
 
 - `nmap -sP 192.168.1.0/24` ping gönderiliyor. Firewall benzeri geri istek dönmesini engelleyen sistemler varsa cevap dönmeyecektir.
 - `nmap 192.168.1.0/24 --top-port-100 --open > btkanaliz` şeklinde en çok kullanılan 100 portun taramasını yapıp _btkanaliz_ dosyasına yükleniyor
 - `cat btkanaliz | grep Nmap` yazdığımızda _Nmap scan report for <IP ADRES>_ şeklinde bir cevap alacağız
 - `cat btkanaliz |grep Nmap | awk '{print $5}' > ip` yazarak da yalnızca ip adresleri kalacak şekilde filtrelendirip ip dosyasına sonucu yazıyoruz.
+
+# Nmap Hedef Tanımlama #
+- `nmap <IP ADRES>` port taraması
+  - ![resim](https://user-images.githubusercontent.com/63648396/147383963-0d1a2541-93af-4f1f-a8cf-d3b9d37b46f1.png)
+  - karşı tarafa bir _ping_ gönderiliyor karşılığında bir cevap geliyorsa o zaman port taraması yapıyor. Bu örnekteki gibi bir filtreleme vermezsek en çok kullanılan 1000 portu tarar
+- `nmap 192.168.1.113,200` şeklinde iki farklı ip adresi için de tarama yapılabilir
+  - ![resim](https://user-images.githubusercontent.com/63648396/147384067-f905632c-2a0e-49b3-96de-92ba30467897.png)
+- `nmap 192.168.1.113-200` bu sefer de 192.168.1.113 ve 192.168.1.200 ipleri arasındaki tüm ipler için port taraması yapacak.
+- `nmap 192.168.1.0/24` şeklinde de subnete yönelik bir tarama yapabiliriz.
+- `nmap yandex.com.tr` şeklinde domain için de port taraması yapabiliriz.
+- içerisinde alt alta aşağıdakiler gibi ip ve domainler yazan bir dosya oluşturduk. (-iL : include list)
+  - nmap -iL <dosya adı>
+  - > 192.168.1.0/25 
+  - > 192.168.2.0/24
+  - > yandex.com.tr
+  - > 10.0.0.0/24
+- `nmap 192.168.1.0/24 --exclude 192.168.1.200` 192.168.1.200 haricindeki o subnetteki tüm iplere tarama yapılacak.
+  
+  
