@@ -60,33 +60,25 @@
 - `nmap 192.168.1.113 -oX akademi` xml şeklinde kaydeder.
 - `nmap 192.168.1.113 -oG akademi` grepable bir çıktı.
 - `nmap 192.168.1.113 -oA akademi` bütün output şekillerinde çıktı (gnmap, nmap, xml)
+- `nmap 192.168.1.113 -T1 akademi` T zaman ayarlaması. default olarak 3 gelir. her artırıldığında artar. güvenlik aracı varsa T1 daha iyi. 
+- `nmap 192.168.1.200 -Pn` ping cevap vermiyorsa. hiç ping atmadan port taraması yapar. -sP pinge cevap gelirse port taraması yapıyorsa
+- `nmap 192.168.1.0/24 -vv --open -Pn --top-ports=5000 -sT -sV -O -oA akademi2` root yetkisi istiyor. 
+  - -n verilirse DNS resolution yapmaz
+  
+# Nmap Scripting Engine #
+- https://nmap.org/book/nse.html
+- /usr/share/nmap/scripts altında tüm scriptleri gözükür
+- `nmap -p 445 192.168.1.200 -sC` script taraması
+- `nmap --script-updatedb` script kısmını güncelliyor. sudo gerekli
+- `nmap --script-smb-os-discovery 192.168.1.200`
+- `nmap --script-help smb-os-discovery` HELP 
+- `nmap 192.168.1.200 --script=smb-vuln-* -p 445` smb ile ilgili bir zafiyet var mı diye hepsini deniyor.
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+# Nmap Firewall Bypass #
+- default olarak syn taraması yapılıyordu.
+- `nmap 192.168.1.113 -f` paketi parçalayarak tespit edilmesinin önüne geçer
+- `nmap 192.168.1.113 -ff`  daha fazla parçalar 
+- `nmap 192.168.1.113 -ff -D 192.168.1.15` sanki sondaki ip hesabından çok fazla istek geliyormuş gibi karşıda boş loglar oluşturup kendinizi gizleyebilirsiniz.
+- `nmap 192.168.1.0/24 -ff -D 192.168.1.15 --max-paralellism 1`  sisteme çok fazla yükleme yapmayalım. aynı anda sadece 1 tane tarama yap .
+- `nmap 192.168.1.113 -ff -D 192.168.1.15 -T1` süreyi azaltarak daha iyi tarama yapılır
+- `sudo nmap --script=firewall-bypass 192.168.1.113`
