@@ -1,4 +1,4 @@
-## Subfinder - HTTPX - DNSX - Nüklei indir. ## 
+## Subfinder - HTTPX - DNSX - Nüklei ve templatelerini indir. ## 
   - Verdiğimiz bir domainin diğ                                                                 er subdomainlerini bize veriyor
   - `subfinder -d yandex.com.tr` 
     - /root/go/bin/subfinder altına kurulu kullanmak için /go/bin içerisindeyken  `./subfinder -d yandex.com` yazabiiriz.
@@ -24,6 +24,9 @@
   - `./subfinder -d yandex.com -o yandex-d && ./httpx -l yandex-d -o yandex-h && nuclei -l ./yandex-h -t cves/ -severity critical` 
     - yandex subdomainlerini bulup `yandex-d` dosyasına kaydedecek. httpx http mi https mi belirleyip kaydedecek. nuclei bütün cveleri bunlar için deneyecek
       - `echo 192.168.1.0/24 | ./httpx -o btk-network && ./nuclei -l btk-network -t cves/`
+  - `./subfinder -d yandex.com -o yandex-d && ./httpx -l yandex-d -o yandex-h && ./nuclei -update-templates && nuclei -l yandex-h -t cves/ -severity critical`
+  - `./nuclei -l yandex-h -t cves/ -severity medium,high,critical -tags cve2021`
+  - `./nuclei -l yandex-h -t default-logins/`
 
 
 
