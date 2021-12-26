@@ -56,6 +56,11 @@
 - `nmap 192.168.1.113 -O` tahmini işletim sistemi ve versiyonu
 - `nmap 192.168.1.113 -sV` normal taramada ftp, smtp gibi yazılar tahmini olarak vardı. ancak bu tarama ile versiyon taraması yaparak port üzerinde tam olarak ne çalıştığını öğreniyoruz.
 - `nmap 192.168.1.113 -A` TCP ACK taraması. işletim sistemi, versiyon taraması, ufak fingerprint scriptleri
+- `nmap 192.168.1.113 -oN akademi` tarama çıktısını akademi dosyasına kaydet (output N)
+- `nmap 192.168.1.113 -oX akademi` xml şeklinde kaydeder.
+- `nmap 192.168.1.113 -oG akademi` grepable bir çıktı.
+- `nmap 192.168.1.113 -oA akademi` bütün output şekillerinde çıktı (gnmap, nmap, xml)
+
   
   
   
