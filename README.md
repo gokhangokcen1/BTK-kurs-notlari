@@ -1,4 +1,4 @@
-# BTK-uygulamali-sizma-testi-egitimi-notlari
+# BTK UYGULAMALI SIZMA TESTİ EĞİTİMİ NOTLARI #
 
 |Temel Bilgiler|Bölüm 2|Bölüm 3|Bölüm 4|Bölüm 5|Bölüm 6|Bölüm 7|
 |---|---|---|---|---|---|---|
