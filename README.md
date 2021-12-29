@@ -8,6 +8,6 @@
 |[3- WAF Tespiti](https://github.com/gokhangokcen1/BTK-uygulamali-sizma-testi-egitimi-notlari/blob/main/Temel-bilgiler/3-WAF-tespiti.md)|3-|3-|3-|3-|3-|3-|
 |[4- Zafiyet Keşfi](https://github.com/gokhangokcen1/BTK-uygulamali-sizma-testi-egitimi-notlari/blob/main/Temel-bilgiler/4-zafiyet-kesfi.md)|4-|4-|4-|4-|4-|4-|
 |[5- Exploit Aşaması](https://github.com/gokhangokcen1/BTK-uygulamali-sizma-testi-egitimi-notlari/blob/main/Temel-bilgiler/5-exploit-asamasi.md)|5-|5-|5-|5-|5-|5-|
-|6-|6-|6-|6-|6-|6-|6-|
-|7-|7-|7-|7-|7-|7-|7-|
+||6-|6-|6-|6-|6-|6-|
+||7-|7-|7-|7-|7-|7-|
 
