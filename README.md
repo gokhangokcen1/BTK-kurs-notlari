@@ -9,3 +9,6 @@
 |[5- Exploit Aşaması](https://github.com/gokhangokcen1/BTK-uygulamali-sizma-testi-egitimi-notlari/blob/main/uygulamali-sizma-testi-egitimi/temel-bilgiler/5-exploit-asamasi.md)|
 
 # GÜVENLİ YAZILIM GELİŞTİRME # 
+|[Giriş](https://github.com/gokhangokcen1/BTK-kurs-notlari/blob/main/guvenli-yazilim-gelistirme/0-giris.md)|[SDLC Secure](https://github.com/gokhangokcen1/BTK-kurs-notlari/blob/main/guvenli-yazilim-gelistirme/1-sdlc-secure.md)|[Güvenlik Test Süreci](https://github.com/gokhangokcen1/BTK-kurs-notlari/blob/main/guvenli-yazilim-gelistirme/2-guvenlik-test-sureci.md)|[SDLC Gereksinimleri ve Çıktıları](https://github.com/gokhangokcen1/BTK-kurs-notlari/blob/main/guvenli-yazilim-gelistirme/3-sdlc-gereksinimleri-ve-ciktilari.md)|
+|---|---|---|---|
+
