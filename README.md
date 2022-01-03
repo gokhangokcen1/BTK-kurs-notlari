@@ -1,4 +1,4 @@
-# BTK UYGULAMALI SIZMA TESTİ EĞİTİMİ NOTLARI #
+# UYGULAMALI SIZMA TESTİ EĞİTİMİ  #
 
 |Temel Bilgiler|Basit AD Network Kurulumu|
 |---|---|
@@ -8,4 +8,4 @@
 |[4- Zafiyet Keşfi](https://github.com/gokhangokcen1/BTK-uygulamali-sizma-testi-egitimi-notlari/blob/main/uygulamali-sizma-testi-egitimi/temel-bilgiler/4-zafiyet-kesfi.md)|
 |[5- Exploit Aşaması](https://github.com/gokhangokcen1/BTK-uygulamali-sizma-testi-egitimi-notlari/blob/main/uygulamali-sizma-testi-egitimi/temel-bilgiler/5-exploit-asamasi.md)|
 
-
+# GÜVENLİ YAZILIM GELİŞTİRME # 
