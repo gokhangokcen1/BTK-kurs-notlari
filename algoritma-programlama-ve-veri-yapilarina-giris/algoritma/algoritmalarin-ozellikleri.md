@@ -1,5 +1,5 @@
-![resim](https://user-images.githubusercontent.com/63648396/148227930-5e97822a-7fb8-4b3a-93df-5aab4e89a6e7.png)
-# Algoritma özellikleri
+# Yönergeler, Problem, Çözüm => Algoritma #
+# Algoritma özellikleri #
   1. Her bir algoritmanın bir _başlangıç ve bitiş noktası_ olmalıdır.
   2. Algoritmalar herhangi bir _teknik kavram_ içermemelidir.
   3. Algoritmalar her zaman _açık_ ve _anlaşılabilirdir_.
