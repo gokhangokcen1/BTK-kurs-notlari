@@ -1,19 +1,27 @@
 ![resim](https://user-images.githubusercontent.com/63648396/148227930-5e97822a-7fb8-4b3a-93df-5aab4e89a6e7.png)
-
-![resim](https://user-images.githubusercontent.com/63648396/148228127-1b9abec3-e842-4b3e-b51d-65222f7e590a.png)
-![resim](https://user-images.githubusercontent.com/63648396/148228160-c888e257-d7e0-4936-be11-f726e442d955.png)
-![resim](https://user-images.githubusercontent.com/63648396/148228185-e91fb024-0206-4103-9f08-09bd5187cbac.png)
-![resim](https://user-images.githubusercontent.com/63648396/148228378-73a7f404-b1f3-4533-a743-061af19074d7.png)
-![resim](https://user-images.githubusercontent.com/63648396/148228466-75e3df37-2e6d-4ed0-b36a-e64ca2d4ffda.png)
-![resim](https://user-images.githubusercontent.com/63648396/148228482-22112f8d-bae6-4ce1-bc7e-a924fce34e44.png)
-![resim](https://user-images.githubusercontent.com/63648396/148228567-85603bb7-cb52-42e0-9daa-e3e539abbe47.png)
-![resim](https://user-images.githubusercontent.com/63648396/148228730-29dea15e-a24a-4e12-8d31-21769deb5ca6.png)
-![resim](https://user-images.githubusercontent.com/63648396/148228826-1fb2f5ae-bbfa-4081-880e-394bfc7560f0.png)
-![resim](https://user-images.githubusercontent.com/63648396/148228953-697e2404-e2bb-4adb-b637-53d37a1666e6.png)
-![resim](https://user-images.githubusercontent.com/63648396/148229265-cfa541ec-e6f5-44f7-ae9f-0efe315af580.png)
-![resim](https://user-images.githubusercontent.com/63648396/148229320-bf796870-7f3b-4c83-9a29-f2b3b2559f9d.png)
-![resim](https://user-images.githubusercontent.com/63648396/148229417-2c5cb09a-173d-4f27-afe5-414e19a214c5.png)
-![resim](https://user-images.githubusercontent.com/63648396/148229408-34ead62a-7fbf-4b01-8382-6bd47c7b2b1f.png)
-![resim](https://user-images.githubusercontent.com/63648396/148229462-c249aede-074c-4be0-9d75-c3ed85fb7c75.png)
-
-
+# Algoritma özellikleri
+  1. Her bir algoritmanın bir _başlangıç ve bitiş noktası_ olmalıdır.
+  2. Algoritmalar herhangi bir _teknik kavram_ içermemelidir.
+  3. Algoritmalar her zaman _açık_ ve _anlaşılabilirdir_.
+  4. Hiçbir çözüm aşamasında algoritma kararsız kalmamalıdır.
+  5. Hesaplamalar, veri işleme, otomatik akıl yürütme ve diğer görevleri gerçekleştirmek için algoritmalar özel olarak tanımlanmış _sistematik adımları_ içerir.
+  6. Tüm işlem adımları _adım adım_ gösterilmelidir.
+  7. Çözüme giden _en kısa_ ve _en az maliyete sahip yol_ tercih edilmelidir.
+  8. Matematik ve bilgisayar bilimlerinde, algoritma tipik olarak bir sınıf problemini çözmek veya bir hesaplama yapmak için iyi tanımlanmış, _bilgisayar tarafından uygulanabilen talimatların sınırlı bir dizi_ olarak tanımlanır.
+  9. Etkili bir algoritma, mevcut _donanım kaynaklarını_ dikkate alarak, _sınırlı bir alan_ ve _zaman_ içinde tanımlı problem için bir çözüm üretebilmelidir.
+  10. Algoritmaların verimli bir şekilde çalışması için çoğu zaman _başlangıç koşulları ve ilk girişlerin değerleri_ belirtilir.
+  11. Daha sonra başlangıç koşulları ve ilk giriş değerleri dikkate alınarak algoritma içerisinde tanımlanmış olan talimatlar ya da başka ifadeyle _işlem adımları ardışık olarak yürütülür_ ve sonunda algoritma bir çıktı üretir ve nihayetinde algoritma son bulur.
+  12. Bu senaryoda _tam olarak belirlilik_ vardır.
+  13. Yani, ilgili girdi ve koşullar için elde edilmesi gereken çıktının kesin değeri saptanmıştır.
+    - Bir sayısının asal çarpanlarını bulma
+    - İki sayının en büyük orta bölenini ya da en küçük ortak katını bulma
+    - İkinci dereceden bir denklemin köklerini bulma
+    - Geometrik bir cisim çevrisini ya da alanını hesaplama
+  14. Bu durumda algoritma ardışık bir şekilde kendini yeniden çağırabilir; olasılık ya da iteratif bir yapı ile sahip olduğu parametreleri güncelleyerek arzu edilen _çözüme yakınsayabilir_.
+  15. Bir başka ifadeyle, problem için _tam olarak belirli bir sonuç üretmeyebilir_; ancak arzu edilen sonuca oldukça yakın bir çıktı üretebilir.
+  16. _Rastgele algoritmalar_ olarak bilinen bazı algoritmalar rastgele girdiler alabilir ya da içerebilir.
+  17. Bazı durumlarda ise problem tanımı yukarıda verilen örneklerin aksine _deterministik_ olmayabilir.
+    - Parmak izine bağlı olarak kimlik tespiti
+    - ATM'ye verilen paranın sahte olup olmadığının tespiti
+    - İmgeye bağlı olarak cinsiyet tespiti
+    - Elektrokardiyografi testine bağlı kalp rahatsızlığı tespiti   
