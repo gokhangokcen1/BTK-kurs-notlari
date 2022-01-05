@@ -1,5 +1,5 @@
 ![resim](https://user-images.githubusercontent.com/63648396/148227930-5e97822a-7fb8-4b3a-93df-5aab4e89a6e7.png)
-![resim](https://user-images.githubusercontent.com/63648396/148228063-90988958-ed4d-4b33-8c38-6ceb3ed6ba3f.png)
+
 ![resim](https://user-images.githubusercontent.com/63648396/148228127-1b9abec3-e842-4b3e-b51d-65222f7e590a.png)
 ![resim](https://user-images.githubusercontent.com/63648396/148228160-c888e257-d7e0-4936-be11-f726e442d955.png)
 ![resim](https://user-images.githubusercontent.com/63648396/148228185-e91fb024-0206-4103-9f08-09bd5187cbac.png)
